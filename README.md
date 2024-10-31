@@ -159,18 +159,10 @@ Kod yazmadan ya da serverda fiziksel database ile ilgilenmeden, tamamen entity m
 
 Oluşturulan bir sınıfın ve üyelerinin, methodun vb. erişilebilirlik seviyelerini kontrol etmek için kullanılır. Uygulamadaki farklı bölümlerin birbiriyle nasıl etkileşime girebileceğini belirlememizi ve güvenliği korumamızı sağlar.
 
-- #### Public
+- **Public** : Her yerden erişilebilir.
 
-Her yerden erişilebilir.
+- **Private** : Sadece tanımlandığı class, interface vb. içinde erişime izin verir.
 
-- #### Private
+- **Protected** : Tanımlandığı sınıfta ve o sınıfı miras alan sınıflardan erişim sağlanır.
 
-Sadece tanımlandığı class, interface vb. içinde erişime izin verir.
-
-- #### Protected
-
-Tanımlandığı sınıfta ve o sınıfı miras alan sınıflardan erişim sağlanır.
-
-- #### Internal
-
-Sadece bulunduğu assembly içinde kullanılabilirler.
+- **Internal** : Sadece bulunduğu assembly içinde kullanılabilirler.
