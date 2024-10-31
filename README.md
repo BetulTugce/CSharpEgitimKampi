@@ -143,7 +143,7 @@ Microsoft tarafından geliştirilmiştir ve open source bir ORM (Object Relation
 
 Entity Framework mimarisinde temelde 3 yaklaşım vardır. `Database First`, `Code First` ve `Model First`.
 
-#### 1.Code First
+#### 1. Code First
 
 Projemizde veritabanı işlemlerini Visual Studio tarafında kod yazarak gerçekleştirmemizi sağlayan bir yaklaşımdır. Bu yaklaşıma göre programlama dilindeki class yapısı veritabanındaki tablo yapısını, property ise tablodaki kolon yapısını ifade eder. Attribute kullanarak validasyon kuralları uygulayabiliriz.
 
@@ -159,18 +159,18 @@ Kod yazmadan ya da serverda fiziksel database ile ilgilenmeden, tamamen entity m
 
 Oluşturulan bir sınıfın ve üyelerinin, methodun vb. erişilebilirlik seviyelerini kontrol etmek için kullanılır. Uygulamadaki farklı bölümlerin birbiriyle nasıl etkileşime girebileceğini belirlememizi ve güvenliği korumamızı sağlar.
 
-#### Public
+- #### Public
 
 Her yerden erişilebilir.
 
-#### Private
+- #### Private
 
 Sadece tanımlandığı class, interface vb. içinde erişime izin verir.
 
-#### Protected
+- #### Protected
 
 Tanımlandığı sınıfta ve o sınıfı miras alan sınıflardan erişim sağlanır.
 
-#### Internal
+- #### Internal
 
 Sadece bulunduğu assembly içinde kullanılabilirler.
