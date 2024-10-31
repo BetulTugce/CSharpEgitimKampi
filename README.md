@@ -108,3 +108,69 @@ Bu sınıf t-sql sorguları ile veritabanı üzerinde select, insert, update ve 
 ```csharp
  adapter.Fill(dataTable);
 ```
+
+## Ders 11 : OOP Modülü: C# ile N Katmanlı Mimari - Entity Layer
+
+Bu derste nesne tabanlı programlamaya (OOP) geçiş yaptık. Katmanlı mimaride proje yazacağımız için öncelikle projeyi 4 katmana (`entity layer`, `data access layer`, `business layer` ve `presentation layer`) ayırdık. Veritabanını code first yaklaşımı ile geliştireceğiz. Bu sebeple entity katmanında `Category`, `Product`, `Order` ve `Customer` sınıflarını oluşturup ilgili propertyleri tanımlayarak dersi tamamladık.
+
+### Mimari Nedir? Neden Kullanılır?
+
+Herhangi bir düzen olmadan yazılan kodu anlamak ve devam ettirmek zaman içinde zorlaşır. Mimari, genel olarak bir yapı veya sistem tasarımını anlatan bir terimdir. Yazılım Mimarisi, herhangi bir yazılım sisteminin temelini oluşturur. Oluşturulmak istenen yazılım için sisteminin tasarımının ve organizasyonunun yapılandırılmasıyla ilgilenen disiplindir. İyi bir yazılım mimarisi kodun daha anlaşılır, sürdürülebilir, genişletilebilir olmasını sağlar ve hata yönetimini kolaylaştırır.
+
+### N-Katmanlı Mimari Nedir?
+
+Katmanlı mimari, projeyi çeşitli katmanlara ayıran ve her katmanın kendine ait belirli görevleri üstlendiği bir yapıdır. Katmanlar kendi içlerinde bağımsız çalışabilir ve diğer katmanlarla belirli protokoller üzerinden iletişim kurar. Böylece kod daha modüler ve yönetilebilir hale gelir.
+
+#### 1. Sunum Katmanı (Presentation Layer)
+
+Kullanıcı arayüzünün bulunduğu katmandır. Kullanıcıyla doğrudan etkileşim kurar.
+
+#### 2. İş Mantığı Katmanı (Business Logic Layer)
+
+İş kurallarını ve mantığını içerir. Veri tabanından verilerin hangi şartlar ile getirileceği, ekleme ve güncelleme için veri doğruluğu (validasyon) işlemleri gerçekleştirilir.
+
+#### 3. Veri Erişim Katmanı (Data Access Layer)
+
+Uygulamada kullanılacak veri tabanına veya diğer veri kaynaklarına erişim sağlayan katmandır. Veri okunma, silme, güncelleme veya oluşturma (temel CRUD) gibi işlemleri içerir. Ayrıca veri tabanı bağlantısı için gerekli context sınıfı da bu katmanda bulunur.
+
+#### 4. Varlık Katmanı (Entity Layer)
+
+Bu katman, veritabanı tablolarına karşılık gelen sınıfları barındırır ve bu özellikleri diğer katmanlara referans yoluyla iletir.
+
+### Entity Framework
+
+Microsoft tarafından geliştirilmiştir ve open source bir ORM (Object Relational Mapping) aracıdır. İlişkisel veritabanı ile nesne yönelimli programlama arasında köprü görevi görür. Veritabanı işlemlerini gerçekleştirmek için karmaşık sql sorguları yazma ihtiyacını ortadan kaldırır diyebiliriz.
+
+Entity Framework mimarisinde temelde 3 yaklaşım vardır. `Database First`, `Code First` ve `Model First`.
+
+#### 1.Code First
+
+Projemizde veritabanı işlemlerini Visual Studio tarafında kod yazarak gerçekleştirmemizi sağlayan bir yaklaşımdır. Bu yaklaşıma göre programlama dilindeki class yapısı veritabanındaki tablo yapısını, property ise tablodaki kolon yapısını ifade eder. Attribute kullanarak validasyon kuralları uygulayabiliriz.
+
+#### 2. Database First
+
+Bu yaklaşımda önce veritabanı ve tablolar oluşturulur. Ardından, mevcut veritabanına bağlanarak otomatik olarak (Entity Framework vb. üzerinden) kod modelleri üretilir.
+
+#### 3. Model First
+
+Kod yazmadan ya da serverda fiziksel database ile ilgilenmeden, tamamen entity model üzerinden veritabanı oluşturmak için kullanılan yaklaşımdır. Önce görsel bir model çizilir, çizilen model üzerinden hem veritabanı hem de kod sınıfları otomatik olarak üretilir.
+
+### Access Modifiers
+
+Oluşturulan bir sınıfın ve üyelerinin, methodun vb. erişilebilirlik seviyelerini kontrol etmek için kullanılır. Uygulamadaki farklı bölümlerin birbiriyle nasıl etkileşime girebileceğini belirlememizi ve güvenliği korumamızı sağlar.
+
+#### Public
+
+Her yerden erişilebilir.
+
+#### Private
+
+Sadece tanımlandığı class, interface vb. içinde erişime izin verir.
+
+#### Protected
+
+Tanımlandığı sınıfta ve o sınıfı miras alan sınıflardan erişim sağlanır.
+
+#### Internal
+
+Sadece bulunduğu assembly içinde kullanılabilirler.
