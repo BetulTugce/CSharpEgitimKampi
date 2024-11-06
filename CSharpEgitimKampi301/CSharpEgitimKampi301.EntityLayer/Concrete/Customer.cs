@@ -1,4 +1,6 @@
-﻿namespace CSharpEgitimKampi301.EntityLayer.Concrete
+﻿using System.Collections.Generic;
+
+namespace CSharpEgitimKampi301.EntityLayer.Concrete
 {
     public class Customer
     {
@@ -6,5 +8,7 @@
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Address { get; set; }
+
+        public List<Order> Orders { get; set; }
     }
 }

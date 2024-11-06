@@ -166,3 +166,16 @@ Oluşturulan bir sınıfın ve üyelerinin, methodun vb. erişilebilirlik seviye
 - **Protected** : Tanımlandığı sınıfta ve o sınıfı miras alan sınıflardan erişim sağlanır.
 
 - **Internal** : Sadece bulunduğu assembly içinde kullanılabilirler.
+
+## Ders 12 : OOP Modülü: Data Access Katmanı ve Context Sınıfı
+
+Önceki derste entity katmanında oluşturduğumuz sınıflar arasında ilişkiler kurduk. `NuGet Package Manager` aracılığıyla `EntityFramework` paketini entity ve presentation katmanına kurduk. Katmanlar arası haberleşmeyi gerçekleştirmek için birbirlerine referans gösterdik. Entity katmanını Data Access katmanına, Data Access katmanını Business katmanına ve Business katmanını Presentation katmanına referans olarak verdik. Context sınıfı oluşturup tabloları ekledik. Son olarak Presentation katmanında App.Config içerisine connection stringi tanımlayarak dersi tamamladık.
+
+### DbContext Sınıfı
+
+Entity Framework'ün temel sınıfıdır. Veritabanı işlemlerini yönetmek için kullanılır.
+
+### DbSet Sınıfı
+
+Entity Framework'te belirli bir varlık türünü yani entityi temsil eden koleksiyonları yönetmek için DbSet<T> sınıfı kullanılır.
+Her DbSet, veritabanındaki bir tabloya karşılık gelir.

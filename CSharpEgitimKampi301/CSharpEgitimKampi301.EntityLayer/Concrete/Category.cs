@@ -1,10 +1,14 @@
-﻿namespace CSharpEgitimKampi301.EntityLayer.Concrete
+﻿using System.Collections.Generic;
+
+namespace CSharpEgitimKampi301.EntityLayer.Concrete
 {
     public class Category
     {
         public int CategoryId { get; set; }
         public string Name { get; set; }
         public bool Status { get; set; }
+
+        public List<Product> Products { get; set; }
     }
 }
 
