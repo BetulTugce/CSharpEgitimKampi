@@ -179,3 +179,15 @@ Entity Framework'ün temel sınıfıdır. Veritabanı işlemlerini yönetmek iç
 
 Entity Framework'te belirli bir varlık türünü yani entityi temsil eden koleksiyonları yönetmek için DbSet<T> sınıfı kullanılır.
 Her DbSet, veritabanındaki bir tabloya karşılık gelir.
+
+## Ders 13 : OOP Modülü: Migration İşlemleri ve Abstract Interfaceler
+
+Bu derste migration işlemini gerçekleştirdik ve interfaceleri yazdık.
+
+### Migration
+
+`Migration`, ***göç*** anlamına gelmektedir. `Migration` işlemi, DbContext sınıfı üzerinden projemizdeki entity classları aracılığıyla kurduğumuz yapıyı veritabanına yansıtmamızı sağlar. 
+
+### Interface
+
+Bir sınıfın hangi işlevleri (create, update vb.) gerçekleştirmesi gerektiğini belirler ama bunun nasıl yapılacağı ile ilgilenmez.
