@@ -191,3 +191,11 @@ Bu derste migration işlemini gerçekleştirdik ve interfaceleri yazdık.
 ### Interface
 
 Bir sınıfın hangi işlevleri (create, update vb.) gerçekleştirmesi gerektiğini belirler ama bunun nasıl yapılacağı ile ilgilenmez.
+
+## Ders 14 : Orm Yapısı: Entity Framework DbFirst ve Model Oluşturma
+
+Bu derste SQL Server üzerinde `Guides`, `Locations` ve `Customer` tablolarını barındıran bir veritabanı oluşturduk. DbFirst yaklaşımını kullanarak oluşturduğumuz veritabanını `Entity Data Model Wizard` aracılığıyla model olarak bağladık ve ilgili entitylerin EF tarafından otomatik olarak oluşturulmasını sağladık.
+
+### Database First
+
+Bu yaklaşımda, yazılım projesine başlamadan önce bir veritabanı tasarlanır ve bu tasarıma göre uygulama gerçekleştirilir. `Entity Framework` veya benzeri ORM araçları kullanarak uygulanır. **DbFirst** özellikle mevcut bir veritabanı üzerinde çalışılması gerektiğinde tercih edilen bir yöntemdir.
