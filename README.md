@@ -203,3 +203,7 @@ Bu yaklaşımda, yazılım projesine başlamadan önce bir veritabanı tasarlan�
 ## Ders 15 : Entity Framework Metotları ile Proje Uygulaması
 
 Bu derste `Guides` tablosunda veritabanı tarafında yaptığımız değişikliğe göre modeli güncelledik. WinFormda basit bir tasarım yaparak `Guides` tablosu için temel CRUD işlemlerini gerçekleştirdik.
+
+## Ders 16 : Entity Framework: Tur Projesi Location İşlemleri
+
+Bu derste winFormda basit bir tasarım yaparak `Locations` tablosu için temel CRUD işlemlerini gerçekleştirdik.
