@@ -207,3 +207,9 @@ Bu derste `Guides` tablosunda veritabanı tarafında yaptığımız değişikli�
 ## Ders 16 : Entity Framework: Tur Projesi Location İşlemleri
 
 Bu derste winFormda basit bir tasarım yaparak `Locations` tablosu için temel CRUD işlemlerini gerçekleştirdik.
+
+## Ders 17 : Entity Framework Metotları ve Linq Sorgular
+
+Bu derste, **İstatistikler** sayfası oluşturduk ve `EF Core` ile `LINQ` sorguları yazarak dersi tamamladık.
+
+![FrmStatistics](https://github.com/user-attachments/assets/304aec72-05a6-4609-944f-692455dc6b74)
