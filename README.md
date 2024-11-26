@@ -213,3 +213,7 @@ Bu derste winFormda basit bir tasarım yaparak `Locations` tablosu için temel C
 Bu derste, **İstatistikler** sayfası oluşturduk ve `EF Core` ile `LINQ` sorguları yazarak dersi tamamladık.
 
 ![FrmStatistics](https://github.com/user-attachments/assets/304aec72-05a6-4609-944f-692455dc6b74)
+
+## Ders 18 : EntityState Komutları, Generic Repository Sınıfı ve Ef Sınıfları
+
+`IGenericRepository` arayüzünde tanımladığımız içi boş metotları `GenericRepository` sınıfını yazarak doldurduk. Ardından her bir entity için `GenericRepository`'den miras alan özel repository sınıflarını oluşturduk ve ilgili sınıflarda kendi arayüzlerini implement ettik. 
