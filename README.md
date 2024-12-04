@@ -217,3 +217,7 @@ Bu derste, **İstatistikler** sayfası oluşturduk ve `EF Core` ile `LINQ` sorgu
 ## Ders 18 : EntityState Komutları, Generic Repository Sınıfı ve Ef Sınıfları
 
 `IGenericRepository` arayüzünde tanımladığımız içi boş metotları `GenericRepository` sınıfını yazarak doldurduk. Ardından her bir entity için `GenericRepository`'den miras alan özel repository sınıflarını oluşturduk ve ilgili sınıflarda kendi arayüzlerini implement ettik. 
+
+## Ders 19 : Business Katmanı ve Logic Kurallar
+
+Business katmanının ne olduğunu, ne işe yaradığını gözden geçirdik. Ardından oluşturduğumuz `IGenericService` arayüzüne `IGenericRepository`de tanımladığımız içi boş metotları ekledik ve her bir entity için custom manager sınıfları oluşturup CRUD işlemleri için eklediğimiz metotların içlerini doldurduk. Kategori işlemleri için form oluşturarak basit bir tasarım hazırladık.
