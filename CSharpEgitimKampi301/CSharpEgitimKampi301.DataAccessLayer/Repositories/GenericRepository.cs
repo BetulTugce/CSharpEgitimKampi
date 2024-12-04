@@ -16,7 +16,7 @@ namespace CSharpEgitimKampi301.DataAccessLayer.Repositories
             _object = context.Set<T>();
         }
 
-        public void DeleteById(T entity)
+        public void Delete(T entity)
         {
             var deletedEntity = context.Entry(entity);
             deletedEntity.State = EntityState.Deleted;
