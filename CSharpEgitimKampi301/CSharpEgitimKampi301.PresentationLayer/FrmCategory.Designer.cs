@@ -36,8 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbActive = new System.Windows.Forms.RadioButton();
             this.rdbPassive = new System.Windows.Forms.RadioButton();
+            this.rdbActive = new System.Windows.Forms.RadioButton();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -70,6 +70,7 @@
             this.btnList.TabIndex = 2;
             this.btnList.Text = "Listele";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // dataGridView1
             // 
@@ -122,17 +123,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kategori";
             // 
-            // rdbActive
-            // 
-            this.rdbActive.AutoSize = true;
-            this.rdbActive.Location = new System.Drawing.Point(86, 125);
-            this.rdbActive.Name = "rdbActive";
-            this.rdbActive.Size = new System.Drawing.Size(53, 20);
-            this.rdbActive.TabIndex = 7;
-            this.rdbActive.TabStop = true;
-            this.rdbActive.Text = "Aktif";
-            this.rdbActive.UseVisualStyleBackColor = true;
-            // 
             // rdbPassive
             // 
             this.rdbPassive.AutoSize = true;
@@ -144,6 +134,17 @@
             this.rdbPassive.Text = "Pasif";
             this.rdbPassive.UseVisualStyleBackColor = true;
             // 
+            // rdbActive
+            // 
+            this.rdbActive.AutoSize = true;
+            this.rdbActive.Location = new System.Drawing.Point(86, 125);
+            this.rdbActive.Name = "rdbActive";
+            this.rdbActive.Size = new System.Drawing.Size(53, 20);
+            this.rdbActive.TabIndex = 7;
+            this.rdbActive.TabStop = true;
+            this.rdbActive.Text = "Aktif";
+            this.rdbActive.UseVisualStyleBackColor = true;
+            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(12, 237);
@@ -152,6 +153,7 @@
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnUpdate
             // 
@@ -161,6 +163,7 @@
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -170,6 +173,7 @@
             this.btnDelete.TabIndex = 10;
             this.btnDelete.Text = "Sil";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnGetById
             // 
@@ -179,6 +183,7 @@
             this.btnGetById.TabIndex = 12;
             this.btnGetById.Text = "ID\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // FrmCategory
             // 

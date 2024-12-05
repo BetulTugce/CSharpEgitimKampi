@@ -1,4 +1,5 @@
 ﻿using CSharpEgitimKampi301.BusinessLayer.Abstract;
+using CSharpEgitimKampi301.DataAccessLayer.Abstract;
 using CSharpEgitimKampi301.EntityLayer.Concrete;
 using System.Collections.Generic;
 
@@ -6,29 +7,36 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concrete
 {
     public class OrderManager : IOrderService
     {
+        private readonly IOrderDal _orderDal;
+
+        public OrderManager(IOrderDal orderDal)
+        {
+            _orderDal = orderDal;
+        }
+
         public void TDelete(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Delete(entity);
         }
 
         public List<Order> TGetAll()
         {
-            throw new System.NotImplementedException();
+            return _orderDal.GetAll();
         }
 
         public Order TGetById(int id)
         {
-            throw new System.NotImplementedException();
+            return _orderDal.GetById(id);
         }
 
         public void TInsert(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Insert(entity);
         }
 
         public void TUpdate(Order entity)
         {
-            throw new System.NotImplementedException();
+            _orderDal.Update(entity);
         }
     }
 }
