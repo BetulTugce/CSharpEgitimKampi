@@ -221,3 +221,12 @@ Bu derste, **İstatistikler** sayfası oluşturduk ve `EF Core` ile `LINQ` sorgu
 ## Ders 19 : Business Katmanı ve Logic Kurallar
 
 Business katmanının ne olduğunu, ne işe yaradığını gözden geçirdik. Ardından oluşturduğumuz `IGenericService` arayüzüne `IGenericRepository`de tanımladığımız içi boş metotları ekledik ve her bir entity için custom manager sınıfları oluşturup CRUD işlemleri için eklediğimiz metotların içlerini doldurduk. Kategori işlemleri için form oluşturarak basit bir tasarım hazırladık.
+
+## Ders 20 : Dependency Injection
+
+Dependency injectionın ne olduğu ve nasıl uygulandığı hakkında teorik bilgileri gözden geçirdik. Ardından bir önceki ders hazırladığımız kategori formunu dinamik hale getirdik. Kategori ile ilgili CRUD işlemlerini gerçekleştirdik.
+
+### Dependency Injection Nedir?
+
+Bağımlılık oluşturacak parçaların ayrılıp, bunların dışardan verilmesiyle sistem içerisindeki bağımlılığı minimize etme işlemidir.
+Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesini kullanacaksak new anahtar sözcüğüyle oluşturmamamız gerektiğini söyleyen bir yaklaşımdır. Kodun test edilebilirliğini ve bakımını kolaylaştırır.
