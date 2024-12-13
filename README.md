@@ -230,3 +230,7 @@ Dependency injectionın ne olduğu ve nasıl uygulandığı hakkında teorik bil
 
 Bağımlılık oluşturacak parçaların ayrılıp, bunların dışardan verilmesiyle sistem içerisindeki bağımlılığı minimize etme işlemidir.
 Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesini kullanacaksak new anahtar sözcüğüyle oluşturmamamız gerektiğini söyleyen bir yaklaşımdır. Kodun test edilebilirliğini ve bakımını kolaylaştırır.
+
+## Ders 21 : Entitye Özgü Metot Yazmak
+
+Ürünler için CRUD operasyonlarını gerçekleştirebilmek amacıyla bir form oluşturduk. `Product` entitysine özel olarak kategori bilgisiyle beraber ürün bilgilerini getiren bir listeleme metotu yazdık. Listeleme ve silme işlemlerini gerçekleştirdik.
