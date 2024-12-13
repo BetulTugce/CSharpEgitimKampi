@@ -233,4 +233,4 @@ Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesin
 
 ## Ders 21 : Entitye Özgü Metot Yazmak
 
-Ürünler için CRUD operasyonlarını gerçekleştirebilmek amacıyla bir form oluşturduk. `Product` entitysine özel olarak kategori bilgisiyle beraber ürün bilgilerini getiren bir listeleme metotu yazdık. Listeleme ve silme işlemlerini gerçekleştirdik.
+Ürünler için CRUD operasyonlarını gerçekleştirebilmek amacıyla bir form oluşturduk. `Product` entitysine özel olarak kategori adıyla beraber ürün bilgilerini getiren metot yazdık. Listeleme ve silme işlemlerini gerçekleştirdik.
