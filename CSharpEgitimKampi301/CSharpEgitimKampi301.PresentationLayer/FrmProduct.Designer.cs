@@ -35,18 +35,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnGetById = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnAdd = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtStock = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtPrice = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.btnGetById = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -124,42 +124,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ürün";
             // 
-            // btnGetById
+            // label6
             // 
-            this.btnGetById.Location = new System.Drawing.Point(12, 490);
-            this.btnGetById.Name = "btnGetById";
-            this.btnGetById.Size = new System.Drawing.Size(292, 43);
-            this.btnGetById.TabIndex = 19;
-            this.btnGetById.Text = "ID\'ye Göre Getir";
-            this.btnGetById.UseVisualStyleBackColor = true;
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 166);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(69, 16);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Açıklama :";
             // 
-            // btnUpdate
+            // txtDescription
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(12, 441);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(292, 43);
-            this.btnUpdate.TabIndex = 18;
-            this.btnUpdate.Text = "Güncelle";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.txtDescription.Location = new System.Drawing.Point(89, 163);
+            this.txtDescription.Multiline = true;
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(197, 106);
+            this.txtDescription.TabIndex = 17;
             // 
-            // btnDelete
+            // cmbCategory
             // 
-            this.btnDelete.Location = new System.Drawing.Point(12, 392);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(292, 43);
-            this.btnDelete.TabIndex = 17;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.UseVisualStyleBackColor = true;
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            this.cmbCategory.FormattingEnabled = true;
+            this.cmbCategory.Location = new System.Drawing.Point(89, 133);
+            this.cmbCategory.Name = "cmbCategory";
+            this.cmbCategory.Size = new System.Drawing.Size(197, 24);
+            this.cmbCategory.TabIndex = 15;
             // 
-            // btnAdd
+            // label3
             // 
-            this.btnAdd.Location = new System.Drawing.Point(12, 343);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(292, 43);
-            this.btnAdd.TabIndex = 16;
-            this.btnAdd.Text = "Ekle";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(10, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Kategori :";
             // 
             // txtStock
             // 
@@ -193,39 +190,45 @@
             this.txtPrice.Size = new System.Drawing.Size(197, 22);
             this.txtPrice.TabIndex = 13;
             // 
-            // label3
+            // btnGetById
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 136);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "Kategori :";
+            this.btnGetById.Location = new System.Drawing.Point(12, 490);
+            this.btnGetById.Name = "btnGetById";
+            this.btnGetById.Size = new System.Drawing.Size(292, 43);
+            this.btnGetById.TabIndex = 19;
+            this.btnGetById.Text = "ID\'ye Göre Getir";
+            this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
-            // cmbCategory
+            // btnUpdate
             // 
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(89, 133);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(197, 24);
-            this.cmbCategory.TabIndex = 15;
+            this.btnUpdate.Location = new System.Drawing.Point(12, 441);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(292, 43);
+            this.btnUpdate.TabIndex = 18;
+            this.btnUpdate.Text = "Güncelle";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // label6
+            // btnDelete
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 166);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 16);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "Açıklama :";
+            this.btnDelete.Location = new System.Drawing.Point(12, 392);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(292, 43);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // txtDescription
+            // btnAdd
             // 
-            this.txtDescription.Location = new System.Drawing.Point(89, 163);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(197, 106);
-            this.txtDescription.TabIndex = 17;
+            this.btnAdd.Location = new System.Drawing.Point(12, 343);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(292, 43);
+            this.btnAdd.TabIndex = 16;
+            this.btnAdd.Text = "Ekle";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // FrmProduct
             // 
