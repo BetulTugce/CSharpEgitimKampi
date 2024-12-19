@@ -234,3 +234,7 @@ Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesin
 ## Ders 21 : Entitye Özgü Metot Yazmak
 
 Ürünler için CRUD operasyonlarını gerçekleştirebilmek amacıyla bir form oluşturduk. `Product` entitysine özel olarak kategori adıyla beraber ürün bilgilerini getiren metot yazdık. Listeleme ve silme işlemlerini gerçekleştirdik.
+
+## Ders 22 : C# ile Dapper Kullanımı
+
+`Product` için ekleme, güncelleme ve idye göre getirme işlemleri gerçekleştirerek eğitimin 301 modülünü tamamladık. Dapperın ne olduğunu ve nerede kullanıldığını inceledik. Ardından yeni bir veritabanı ve winForm uygulaması oluşturarak eğitimin 501 modülüne geçiş yaptık. Dapper paketini kurduk, dtolarımızı ve interfaceimizi yazarak dersi tamamladık.
