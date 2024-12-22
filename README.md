@@ -238,3 +238,7 @@ Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesin
 ## Ders 22 : C# ile Dapper Kullanımı
 
 `Product` için ekleme, güncelleme ve idye göre getirme işlemleri gerçekleştirerek eğitimin 301 modülünü tamamladık. Dapperın ne olduğunu ve nerede kullanıldığını inceledik. Ardından yeni bir veritabanı ve winForm uygulaması oluşturarak eğitimin 501 modülüne geçiş yaptık. Dapper paketini kurduk, dtolarımızı ve interfaceimizi yazarak dersi tamamladık.
+
+## Ders 23 : Dapper İşlemlerinin Tamamlanması
+
+Önceki derste oluşturduğumuz formda dapper aracılığıyla ekleme, silme, güncelleme ve listeleme işlemlerini gerçekleştirdik ve formu dinamik hale getirdik. Sonrasında toplam kategori sayısı, en pahalı ürün gibi istatistikleri getirmek için sorgular yazarak dersi tamamladık.
