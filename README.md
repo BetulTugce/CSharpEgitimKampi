@@ -246,3 +246,7 @@ Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesin
 ## Ders 24 : C# ile MongoDb Kullanımı 1
 
 Eğitimin 601 modülüne geçtik. MongoDbnin ne olduğu, özellikleri ve avantajları hakkında bilgi edindik. Yeni bir proje oluşturarak basit bir form tasarımı yaptık. Ardından `Customer` entitysini oluşturduk. Servis yazarak ekleme işlemini gerçekleştirdik.
+
+## Ders 25 : C# ile MongoDb Kullanımı 2
+
+Customer için ekleme işlemini önceki ders gerçekleştirmiştik. Geri kalan CRUD işlemleri için servisi ve formu güncelleyerek dersi tamamladık.
