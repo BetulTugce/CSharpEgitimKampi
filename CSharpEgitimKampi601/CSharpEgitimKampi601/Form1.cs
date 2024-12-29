@@ -39,5 +39,39 @@ namespace CSharpEgitimKampi601
             customerOperations.AddCustomer(customer);
             MessageBox.Show("İşlem başarılı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void btnList_Click(object sender, EventArgs e)
+        {
+            List<Customer> customers = customerOperations.GetCustomers();
+            dataGridView1.DataSource = customers;
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            string customerId = txtId.Text;
+            customerOperations.DeleteCustomer(customerId);
+            MessageBox.Show("İşlem başarılı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            var updateCustomer = new Customer()
+            {
+                CustomerId = txtId.Text,
+                CustomerName = txtName.Text,
+                CustomerSurname = txtSurname.Text,
+                CustomerCity = txtCity.Text,
+                CustomerBalance = decimal.Parse(txtBalance.Text),
+                CustomerShoppingCount = int.Parse(txtShoppingCount.Text),
+            };
+            customerOperations.UpdateCustomer(updateCustomer);
+            MessageBox.Show("İşlem başarılı!", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnGetById_Click(object sender, EventArgs e)
+        {
+            Customer customer = customerOperations.GetCustomerById(txtId.Text);
+            dataGridView1.DataSource = new List<Customer> { customer };
+        }
     }
 }
