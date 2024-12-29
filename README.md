@@ -242,3 +242,7 @@ Yani, oluşturacağımız bir sınıf içerisinde başka bir sınıfın nesnesin
 ## Ders 23 : Dapper İşlemlerinin Tamamlanması
 
 Önceki derste oluşturduğumuz formda dapper aracılığıyla ekleme, silme, güncelleme ve listeleme işlemlerini gerçekleştirdik ve formu dinamik hale getirdik. Sonrasında toplam kategori sayısı, en pahalı ürün gibi istatistikleri getirmek için sorgular yazarak dersi tamamladık.
+
+## Ders 24 : C# ile MongoDb Kullanımı 1
+
+Eğitimin 601 modülüne geçtik. MongoDbnin ne olduğu, özellikleri ve avantajları hakkında bilgi edindik. Yeni bir proje oluşturarak basit bir form tasarımı yaptık. Ardından `Customer` entitysini oluşturduk. Servis yazarak ekleme işlemini gerçekleştirdik.
