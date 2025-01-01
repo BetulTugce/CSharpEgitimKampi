@@ -250,3 +250,11 @@ Eğitimin 601 modülüne geçtik. MongoDbnin ne olduğu, özellikleri ve avantaj
 ## Ders 25 : C# ile MongoDb Kullanımı 2
 
 Customer için ekleme işlemini önceki ders gerçekleştirmiştik. Geri kalan CRUD işlemleri için servisi ve formu güncelleyerek dersi tamamladık.
+
+## Ders 26 : C# ile PostgreSQL Kullanımı 1
+
+PostgreSQL hakkında genel bilgileri kısaca gözden geçirdik. Ardından `CustomerDb` adında örnek bir veritabanı ve `Customers` tablosu oluşturduk. 601 altında yeni bir form sayfası oluşturarak CRUD işlemlerini gerçekleştirdik. 
+
+**PostgreSQL**, tamamen ücretsiz ve açık kaynaklı, güçlü bir veritabanı yönetim sistemidir.
+**NpgsqlCommand**: PostgreSQL veritabanına sorgu göndermek için kullanılır.
+**NpgsqlDataAdapter**: PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görür. Genellikle verileri veritabanından alıp bir `DataSet` veya `DataTable` nesnesine yüklemek ve daha sonra bu verileri manipüle edip veritabanına geri yazmak için kullanılır.
