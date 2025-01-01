@@ -12,7 +12,7 @@ namespace CSharpEgitimKampi601
             InitializeComponent();
         }
 
-        string connectionString = "Server=localhost;port=5432;Database=CustomerDb;user Id=postgres;Password=admin";
+        string connectionString = "Server=localhost;port=5432;Database=CustomerDb;user Id=postgres;Password=your_password";
 
         void GetAllCustomers()
         {
