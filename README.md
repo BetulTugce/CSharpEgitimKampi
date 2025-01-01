@@ -255,6 +255,14 @@ Customer için ekleme işlemini önceki ders gerçekleştirmiştik. Geri kalan C
 
 PostgreSQL hakkında genel bilgileri kısaca gözden geçirdik. Ardından `CustomerDb` adında örnek bir veritabanı ve `Customers` tablosu oluşturduk. 601 altında yeni bir form sayfası oluşturarak CRUD işlemlerini gerçekleştirdik. 
 
-**PostgreSQL**, tamamen ücretsiz ve açık kaynaklı, güçlü bir veritabanı yönetim sistemidir.
-**NpgsqlCommand**: PostgreSQL veritabanına sorgu göndermek için kullanılır.
-**NpgsqlDataAdapter**: PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görür. Genellikle verileri veritabanından alıp bir `DataSet` veya `DataTable` nesnesine yüklemek ve daha sonra bu verileri manipüle edip veritabanına geri yazmak için kullanılır.
+### PostgreSQL
+
+Tamamen ücretsiz ve açık kaynaklı, güçlü bir veritabanı yönetim sistemidir.
+
+#### NpgsqlCommand
+
+PostgreSQL veritabanına sorgu göndermek için kullanılır.
+
+#### NpgsqlDataAdapter
+
+PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görür. Genellikle verileri veritabanından alıp bir `DataSet` veya `DataTable` nesnesine yüklemek ve daha sonra bu verileri manipüle edip veritabanına geri yazmak için kullanılır.
