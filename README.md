@@ -266,3 +266,7 @@ PostgreSQL veritabanına sorgu göndermek için kullanılır.
 #### NpgsqlDataAdapter
 
 PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görür. Genellikle verileri veritabanından alıp bir `DataSet` veya `DataTable` nesnesine yüklemek ve daha sonra bu verileri manipüle edip veritabanına geri yazmak için kullanılır.
+
+## Ders 27 : C# ile PostgreSQL Kullanımı 2
+
+`Employee` formu ekleyerek basit bir sayfa oluşturduk. `CustomerDb` üzerinde sorgu yazarak `Employees` ve `Departments` tablolarını oluşturduk. Örnek veri girişi yaptık. Form sayfasında listeleme ve ekleme işlemini gerçekleştirdik.
