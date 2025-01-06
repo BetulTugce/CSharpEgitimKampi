@@ -270,3 +270,7 @@ PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görü
 ## Ders 27 : C# ile PostgreSQL Kullanımı 2
 
 `Employee` formu ekleyerek basit bir sayfa oluşturduk. `CustomerDb` üzerinde sorgu yazarak `Employees` ve `Departments` tablolarını oluşturduk. Örnek veri girişi yaptık. Form sayfasında listeleme ve ekleme işlemini gerçekleştirdik.
+
+## Ders 28 - Proje: Finansal Crm Uygulaması 1
+
+`FinancialCRM` adında winForms app oluşturduk. SQL Server üzerinde veritabanını geliştirdik. Basit bir sayfa tasarımı yaparak dersi bitirdik.
