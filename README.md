@@ -274,3 +274,7 @@ PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görü
 ## Ders 28 - Proje: Finansal Crm Uygulaması 1
 
 `FinancialCRM` adında winForms app oluşturduk. SQL Server üzerinde veritabanını geliştirdik. Basit bir sayfa tasarımı yaparak dersi bitirdik.
+
+## Ders 29 - Proje: Finansal Crm Uygulaması 2
+
+Geliştirdiğimiz veritabanından ADO.NET ile modeller ve DbContexti oluşturduk. Banka ve ödemeler formlarını dinamik hale getirdik.
