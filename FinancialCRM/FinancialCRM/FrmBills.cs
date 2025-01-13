@@ -68,7 +68,7 @@ namespace FinancialCRM
         {
             FrmBanks frm = new FrmBanks();
             frm.Show();
-            this.Hide();
+            this.Hide(); // Formu arka planda gizliyor yani form kapanmiyor. RAMde yer kapliyor.
         }
     }
 }
