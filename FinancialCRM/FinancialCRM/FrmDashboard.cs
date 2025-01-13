@@ -99,5 +99,12 @@ namespace FinancialCRM
                 lblBillAmount.Text = internetBill.ToString() + " ₺";
             }
         }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FrmCategories frm = new FrmCategories();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

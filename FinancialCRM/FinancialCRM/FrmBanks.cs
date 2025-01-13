@@ -54,5 +54,19 @@ namespace FinancialCRM
             frm.Show();
             this.Hide();
         }
+
+        private void btnCategories_Click(object sender, EventArgs e)
+        {
+            FrmCategories frm = new FrmCategories();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            FrmDashboard frm = new FrmDashboard();
+            frm.Show();
+            this.Hide();
+        }
     }
 }
