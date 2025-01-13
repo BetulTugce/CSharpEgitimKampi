@@ -44,7 +44,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnSignOut = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
             this.btnBills = new System.Windows.Forms.Button();
             this.btnSpendings = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
@@ -211,7 +211,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(84)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.btnSignOut);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnSettings);
             this.panel1.Controls.Add(this.btnBills);
             this.panel1.Controls.Add(this.btnSpendings);
             this.panel1.Controls.Add(this.btnBanks);
@@ -236,18 +236,19 @@
             this.btnSignOut.UseVisualStyleBackColor = false;
             this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
-            // button5
+            // btnSettings
             // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(24, 306);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(151, 42);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Ayarlar";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnSettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.White;
+            this.btnSettings.Location = new System.Drawing.Point(24, 306);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Size = new System.Drawing.Size(151, 42);
+            this.btnSettings.TabIndex = 5;
+            this.btnSettings.Text = "Ayarlar";
+            this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // btnBills
             // 
@@ -405,7 +406,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnSignOut;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnBills;
         private System.Windows.Forms.Button btnSpendings;
         private System.Windows.Forms.Button btnBanks;

@@ -102,5 +102,11 @@ namespace FinancialCRM
         {
             Application.Exit();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            FrmSettings frm = new FrmSettings();
+            frm.ShowDialog();
+        }
     }
 }
