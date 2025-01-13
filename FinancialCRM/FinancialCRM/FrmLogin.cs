@@ -26,9 +26,10 @@ namespace FinancialCRM
 
         private void FrmLogin_Load(object sender, EventArgs e)
         {
+            string username = GetAdminUsername();
             // Uygulama ilk ayaga kalktiginda veritabanından kullanicinin silinme ihtimaline karsilik ilk olarak kullanici var mi yok mu kontrol ediyorum. Sonrasında kullanici bulunamadıysa ekliyorum..
             FinancialCRMDbEntities db = new FinancialCRMDbEntities();
-            var user = db.Users.Where(u => u.Username == GetAdminUsername()).FirstOrDefault();
+            var user = db.Users.Where(u => u.Username == username).FirstOrDefault();
             if (user == null)
             {
                 User newUser = new User();
