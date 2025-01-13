@@ -33,9 +33,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnBills = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnSpendings = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCategories = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -70,9 +70,9 @@
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnBills);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnSpendings);
             this.panel1.Controls.Add(this.btnBanks);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnCategories);
             this.panel1.Controls.Add(this.btnDashboard);
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
@@ -115,22 +115,23 @@
             this.btnBills.Name = "btnBills";
             this.btnBills.Size = new System.Drawing.Size(151, 42);
             this.btnBills.TabIndex = 4;
-            this.btnBills.Text = "Giderler";
+            this.btnBills.Text = "Faturalar";
             this.btnBills.UseVisualStyleBackColor = false;
             this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
             // 
-            // button3
+            // btnSpendings
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(24, 193);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 42);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Faturalar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSpendings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpendings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpendings.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSpendings.ForeColor = System.Drawing.Color.White;
+            this.btnSpendings.Location = new System.Drawing.Point(24, 193);
+            this.btnSpendings.Name = "btnSpendings";
+            this.btnSpendings.Size = new System.Drawing.Size(151, 42);
+            this.btnSpendings.TabIndex = 3;
+            this.btnSpendings.Text = "Giderler";
+            this.btnSpendings.UseVisualStyleBackColor = false;
+            this.btnSpendings.Click += new System.EventHandler(this.btnSpendings_Click);
             // 
             // btnBanks
             // 
@@ -146,18 +147,18 @@
             this.btnBanks.UseVisualStyleBackColor = false;
             this.btnBanks.Click += new System.EventHandler(this.btnBanks_Click);
             // 
-            // button2
+            // btnCategories
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(24, 79);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Kategoriler";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCategories.BackColor = System.Drawing.Color.Transparent;
+            this.btnCategories.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCategories.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategories.ForeColor = System.Drawing.Color.White;
+            this.btnCategories.Location = new System.Drawing.Point(24, 79);
+            this.btnCategories.Name = "btnCategories";
+            this.btnCategories.Size = new System.Drawing.Size(151, 42);
+            this.btnCategories.TabIndex = 1;
+            this.btnCategories.Text = "Kategoriler";
+            this.btnCategories.UseVisualStyleBackColor = false;
             // 
             // btnDashboard
             // 
@@ -324,9 +325,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnBills;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSpendings;
         private System.Windows.Forms.Button btnBanks;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;

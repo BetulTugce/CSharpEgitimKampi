@@ -90,5 +90,12 @@ namespace FinancialCRM
                 CategoryList();
             }
         }
+
+        private void btnSpendings_Click(object sender, EventArgs e)
+        {
+            FrmSpendings frm = new FrmSpendings();
+            frm.Show();
+            this.Hide();
+        }
     }
 }

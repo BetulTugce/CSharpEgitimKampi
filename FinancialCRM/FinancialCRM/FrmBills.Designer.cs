@@ -32,8 +32,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnBills = new System.Windows.Forms.Button();
+            this.btnSpendings = new System.Windows.Forms.Button();
             this.btnBanks = new System.Windows.Forms.Button();
             this.btnCategories = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
@@ -67,9 +67,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 24);
+            this.label1.Size = new System.Drawing.Size(85, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ödemeler";
+            this.label1.Text = "Faturalar";
             // 
             // panel2
             // 
@@ -106,31 +106,32 @@
             this.button5.Text = "Ayarlar";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnBills
             // 
-            this.button6.BackColor = System.Drawing.Color.Transparent;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(24, 249);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(151, 42);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "Giderler";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnBills.BackColor = System.Drawing.Color.Transparent;
+            this.btnBills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBills.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBills.ForeColor = System.Drawing.Color.White;
+            this.btnBills.Location = new System.Drawing.Point(24, 249);
+            this.btnBills.Name = "btnBills";
+            this.btnBills.Size = new System.Drawing.Size(151, 42);
+            this.btnBills.TabIndex = 4;
+            this.btnBills.Text = "Faturalar";
+            this.btnBills.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnSpendings
             // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(24, 193);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 42);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Faturalar";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnSpendings.BackColor = System.Drawing.Color.Transparent;
+            this.btnSpendings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSpendings.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSpendings.ForeColor = System.Drawing.Color.White;
+            this.btnSpendings.Location = new System.Drawing.Point(24, 193);
+            this.btnSpendings.Name = "btnSpendings";
+            this.btnSpendings.Size = new System.Drawing.Size(151, 42);
+            this.btnSpendings.TabIndex = 3;
+            this.btnSpendings.Text = "Giderler";
+            this.btnSpendings.UseVisualStyleBackColor = false;
+            this.btnSpendings.Click += new System.EventHandler(this.btnSpendings_Click);
             // 
             // btnBanks
             // 
@@ -179,8 +180,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(84)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.btnBills);
+            this.panel1.Controls.Add(this.btnSpendings);
             this.panel1.Controls.Add(this.btnBanks);
             this.panel1.Controls.Add(this.btnCategories);
             this.panel1.Controls.Add(this.btnDashboard);
@@ -214,7 +215,7 @@
             this.btnBillList.Name = "btnBillList";
             this.btnBillList.Size = new System.Drawing.Size(382, 32);
             this.btnBillList.TabIndex = 11;
-            this.btnBillList.Text = "Ödeme Listesi";
+            this.btnBillList.Text = "Fatura Listesi";
             this.btnBillList.UseVisualStyleBackColor = true;
             this.btnBillList.Click += new System.EventHandler(this.btnBillList_Click);
             // 
@@ -224,7 +225,7 @@
             this.btnRemoveBill.Name = "btnRemoveBill";
             this.btnRemoveBill.Size = new System.Drawing.Size(382, 32);
             this.btnRemoveBill.TabIndex = 10;
-            this.btnRemoveBill.Text = "Ödeme Sil";
+            this.btnRemoveBill.Text = "Fatura Sil";
             this.btnRemoveBill.UseVisualStyleBackColor = true;
             this.btnRemoveBill.Click += new System.EventHandler(this.btnRemoveBill_Click);
             // 
@@ -234,7 +235,7 @@
             this.btnUpdateBill.Name = "btnUpdateBill";
             this.btnUpdateBill.Size = new System.Drawing.Size(382, 32);
             this.btnUpdateBill.TabIndex = 9;
-            this.btnUpdateBill.Text = "Ödeme Güncelle";
+            this.btnUpdateBill.Text = "Fatura Güncelle";
             this.btnUpdateBill.UseVisualStyleBackColor = true;
             this.btnUpdateBill.Click += new System.EventHandler(this.btnUpdateBill_Click);
             // 
@@ -244,7 +245,7 @@
             this.btnCreateBill.Name = "btnCreateBill";
             this.btnCreateBill.Size = new System.Drawing.Size(382, 32);
             this.btnCreateBill.TabIndex = 8;
-            this.btnCreateBill.Text = "Yeni Ödeme";
+            this.btnCreateBill.Text = "Yeni Fatura";
             this.btnCreateBill.UseVisualStyleBackColor = true;
             this.btnCreateBill.Click += new System.EventHandler(this.btnCreateBill_Click);
             // 
@@ -316,9 +317,9 @@
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 24);
+            this.label2.Size = new System.Drawing.Size(99, 24);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ödeme Id : ";
+            this.label2.Text = "Fatura Id : ";
             // 
             // panel4
             // 
@@ -369,8 +370,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnBills;
+        private System.Windows.Forms.Button btnSpendings;
         private System.Windows.Forms.Button btnBanks;
         private System.Windows.Forms.Button btnCategories;
         private System.Windows.Forms.Button btnDashboard;
