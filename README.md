@@ -278,3 +278,34 @@ PostgreSQL'deki verilerle DataSet gibi nesneler arasında köprü görevi görü
 ## Ders 29 - Proje: Finansal Crm Uygulaması 2
 
 Geliştirdiğimiz veritabanından ADO.NET ile modeller ve DbContexti oluşturduk. Banka ve ödemeler formlarını dinamik hale getirdik.
+
+## Ders 30 - Proje: Finansal Crm Uygulaması Final Dersi
+
+Anasayfa formunu dinamik hale getirdik. 
+
+Son case görevi kapsamında:
+- `Kategoriler`, `Giderler`, `Ayarlar` ve `Login` formlarını oluşturup dinamik hale getirdim. 
+- Veritabanında kullanıcı parola bilgisini şifreleyerek saklamak üzere gerekli güncellemeleri yaptım. 
+- Uygulama ayağa kalkarken varsayılan kullanıcıyı kontrol ettim. Olası bir silinme durumunda kullanıcıyı otomatik olarak oluşturma işlemini gerçekleştirdim.
+
+Projeye ait ekran görüntüleri:
+
+![LoginFormu](https://github.com/user-attachments/assets/9817e91e-f6ce-4d66-a095-9395471a2cd0)
+
+![Anasayfa](https://github.com/user-attachments/assets/980b4052-cf25-44cc-bb83-767c5b0d0983)
+
+![Kategoriler](https://github.com/user-attachments/assets/2a136b84-7497-4aa2-a65b-8da6f751ae29)
+
+![Bankalar](https://github.com/user-attachments/assets/3811ecc1-1444-4f38-bc8b-4a323412ce88)
+
+![Giderler](https://github.com/user-attachments/assets/debfcfe6-300d-41ba-8014-97a7d82c2a3c)
+
+![Giderler2](https://github.com/user-attachments/assets/6af79110-de3e-49b3-a7e6-aaf128a41335)
+
+![Faturalar](https://github.com/user-attachments/assets/e834b01f-f519-4c5d-9abe-3d63465d1aab)
+
+![Settings](https://github.com/user-attachments/assets/f060bb7a-3b72-4b18-acca-93ab0e48bc45)
+
+![Settings2](https://github.com/user-attachments/assets/b93ba9c3-731f-492e-b00d-f83ecaee7af1)
+
+![Settings3](https://github.com/user-attachments/assets/6fa2f87a-11bb-461d-9691-9c54accf10b3)
