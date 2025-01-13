@@ -97,5 +97,10 @@ namespace FinancialCRM
             frm.Show();
             this.Hide();
         }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

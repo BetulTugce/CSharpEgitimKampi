@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnSignOut = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btnBills = new System.Windows.Forms.Button();
             this.btnSpendings = new System.Windows.Forms.Button();
@@ -69,7 +69,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(84)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btnSignOut);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.btnBills);
             this.panel1.Controls.Add(this.btnSpendings);
@@ -81,18 +81,19 @@
             this.panel1.Size = new System.Drawing.Size(200, 512);
             this.panel1.TabIndex = 0;
             // 
-            // button7
+            // btnSignOut
             // 
-            this.button7.BackColor = System.Drawing.Color.Transparent;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(24, 362);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(151, 42);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Çıkış";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnSignOut.BackColor = System.Drawing.Color.Transparent;
+            this.btnSignOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignOut.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.ForeColor = System.Drawing.Color.White;
+            this.btnSignOut.Location = new System.Drawing.Point(24, 362);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(151, 42);
+            this.btnSignOut.TabIndex = 6;
+            this.btnSignOut.Text = "Çıkış";
+            this.btnSignOut.UseVisualStyleBackColor = false;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
             // 
             // button5
             // 
@@ -458,7 +459,7 @@
         private System.Windows.Forms.Button btnSpendings;
         private System.Windows.Forms.Button btnBanks;
         private System.Windows.Forms.Button btnCategories;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
